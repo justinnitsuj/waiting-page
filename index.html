@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trivago</title>
+    <script src="https://kit.fontawesome.com/231e09f1bf.js" crossorigin="anonymous"></script>
     <style>
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
-            overflow: hidden;
         }
 
         .background-image {
@@ -25,24 +25,55 @@
         }
 
         .centered-text {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             color: white;
+            height: 100%;
+            flex-direction: column;
         }
 
         .centered-text h1 {
-            font-size: 48px;
+            font-size: 62px;
             font-weight: bold;
+            margin-top: 10px;
+        }
+        .centered-text h2{
+            margin-bottom: 10px;
+            font-size: 24px;
+            font-weight: lighter;
+
+        }
+        .social-icons {
+            position: fixed;
+            bottom: 20px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .social-icons i {
+            margin: 0 10px;
+            font-size: 24px;
+            color: white;
         }
     </style>
 </head>
 <body>
     <div class="background-image"></div>
     <div class="centered-text">
-        <h1>Coming Soon</h1>
+        <h2>Welcome To Trivago.com.tw</h2>
+        <h1>We're Almost Ready</h1>
+    </div>
+    <div class="social-icons">
+        <a href="https://www.facebook.com/trivago/?locale=zh_TW">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/trivago/">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://twitter.com/trivago?lang=zh-Hant">
+            <i class="fab fa-twitter"></i>
+        </a>
     </div>
 </body>
 </html>
